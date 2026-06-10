@@ -18,7 +18,7 @@ export function Contact() {
         </p>
         <div className="mt-8 flex justify-center">
           <Button asChild size="lg">
-            <a href="mailto:juan.santiago@example.com">
+            <a href="mailto:juangrasantiago@gmail.com">
               <Mail className="size-4" aria-hidden="true" />
               {t.contact.cta}
             </a>
