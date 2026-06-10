@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Mail } from "lucide-react"
 import { SectionHeading } from "@/components/section-heading"
 import { Button } from "@/components/ui/button"
@@ -8,7 +9,18 @@ import { useLanguage } from "@/lib/i18n"
 
 export function Contact() {
   const { t } = useLanguage()
+  
+    const [copied, setCopied] = useState(false)
 
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText("juangrasantiago@gmail.com")
+
+    setCopied(true)
+
+    setTimeout(() => {
+    setCopied(false)
+    }, 2000)
+  }
   return (
     <section id="contact" className="px-6 py-20">
       <div className="mx-auto max-w-3xl text-center">
@@ -18,13 +30,24 @@ export function Contact() {
         </p>
         <div className="mt-8 flex justify-center">
           <Button asChild size="lg">
-            <a href="mailto:juangrasantiago@gmail.com">
-              <Mail className="size-4" aria-hidden="true" />
-              {t.contact.cta}
+            <a
+              href="mailto:juangrasantiago@gmail.com"
+             className="flex flex-col items-center justify-center"
+            >
+             <Mail className="size-4" aria-hidden="true" />
+             {t.contact.cta}
             </a>
           </Button>
         </div>
-        <div className="mt-10 flex items-center justify-center gap-6">
+        <p
+          onClick={copyEmail}
+          className="mt-4 cursor-pointer text-center text-sm text-muted-foreground transition-colors hover:text-primary"
+          >
+          {copied
+           ? "✓ Correo copiado al portapapeles"
+            : "📧 juangrasantiago@gmail.com"}
+        </p>
+        <div className="mt-6 flex items-center justify-center gap-6">
           <a
             href="https://github.com/juangrasantiago"
             target="_blank"

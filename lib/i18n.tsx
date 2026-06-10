@@ -150,8 +150,8 @@ export const translations = {
   es: {
     nav: {
       about: "Sobre mí",
-      certifications: "Certs",
-      skills: "Skills",
+      certifications: "Certificaciones",
+      skills: "Habilidades",
       projects: "Proyectos",
       labs: "Labs",
       contact: "Contacto",

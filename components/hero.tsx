@@ -62,8 +62,11 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start">
             <Button asChild>
-              <a href="#projects">
-                {t.hero.viewProjects}
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2"
+              >
+                <span>{t.hero.viewProjects}</span>
                 <ArrowRight className="size-4" aria-hidden="true" />
               </a>
             </Button>
