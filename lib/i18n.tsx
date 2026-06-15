@@ -97,9 +97,11 @@ export const translations = {
           tags: ["Python", "Wireshark", "Networking"],
         },
         {
-          title: "Web App Vulnerability Scanner",
-          desc: "Automated scanner that probes common OWASP Top 10 issues against a target, integrating Burp Suite findings into a single dashboard.",
-          tags: ["Burp Suite", "OWASP", "Python"],
+          title: "JGSAnalyzer",
+          desc: "HTTP security header analysis tool developed in Python. Detects missing headers, classifies the risk, and generates JSON reports.",
+          tags: ["Python"],
+          github: "https://github.com/juangrasantiago/JGSAnalyzer",
+          demo: ""
         },
         {
           title: "FRIKIZONE",
@@ -237,9 +239,11 @@ export const translations = {
           tags: ["Python", "Wireshark", "Redes"],
         },
         {
-          title: "Escáner de vulnerabilidades web",
-          desc: "Escáner automatizado que prueba los problemas comunes del OWASP Top 10 sobre un objetivo, integrando los hallazgos de Burp Suite en un único panel.",
-          tags: ["Burp Suite", "OWASP", "Python"],
+          title: "JGSAnalyzer",
+          desc: "Herramienta de análisis de cabeceras de seguridad HTTP desarrollada en Python. Detecta cabeceras ausentes, clasifica el riesgo y genera reportes JSON.",
+          tags: ["Python"],
+          github: "https://github.com/juangrasantiago/JGSAnalyzer",
+          demo: ""
         },
         {
           title: "FRIKIZONE",
