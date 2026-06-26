@@ -34,7 +34,7 @@ export function Projects() {
                   </a>
                   {project.demo && (
                   <a
-                    href={project.demo}
+                    href={project.demo as string}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`${project.title} live`}
