@@ -92,9 +92,11 @@ export const translations = {
           demo: ""
         },
         {
-          title: "Network Traffic Analyzer",
-          desc: "Python tool that parses packet captures, flags suspicious traffic patterns, and generates summary reports of potential intrusions.",
-          tags: ["Python", "Wireshark", "Networking"],
+          title: "Burguer Q'Komo? — Digital menu website for restaurants",
+          desc: "Digital menu for the fast-food restaurant Q'Komo?. A static website built using HTML, CSS, and vanilla JavaScript, without frameworks or external dependencies. It features a minimalist design with a dark background and an orange-red color palette. It includes sticky navigation, a hero section, and all menu categories organized and dynamically rendered directly from the code.",
+          tags: ["Html", "CSS", "JavasCript"],
+          github: "https://github.com/juangrasantiago/Burger-Q-Komo-",
+          demo: ""
         },
         {
           title: "JGSAnalyzer",
@@ -234,9 +236,11 @@ export const translations = {
           demo: ""
         },
         {
-          title: "Analizador de tráfico de red",
-          desc: "Herramienta en Python que analiza capturas de paquetes, detecta patrones de tráfico sospechosos y genera informes resumidos de posibles intrusiones.",
-          tags: ["Python", "Wireshark", "Redes"],
+          title: "Burguer Q'Komo? — Web de carta digital para restaurante",
+          desc: "Carta digital para el restaurante de comida rápida Q'Komo?. Web estática desarrollada con HTML, CSS y JavaScript vanilla, sin frameworks ni dependencias externas. Diseño minimalista con fondo oscuro y paleta naranja-rojiza. Incluye navegación sticky, hero section y todas las categorías del menú organizadas y renderizadas dinámicamente desde el propio código.",
+          tags: ["Html", "CSS", "JavasCript"],
+          github: "https://github.com/juangrasantiago/Burger-Q-Komo-",
+          demo: ""
         },
         {
           title: "JGSAnalyzer",
