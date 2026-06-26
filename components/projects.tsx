@@ -32,8 +32,9 @@ export function Projects() {
                   >
                     <GithubIcon className="size-5" />
                   </a>
+                  {project.demo && (
                   <a
-                    href={project.github}
+                    href={project.demo}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`${project.title} live`}
@@ -41,6 +42,7 @@ export function Projects() {
                   >
                     <ExternalLink className="size-5" />
                   </a>
+                  )}
                 </div>
               </div>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
