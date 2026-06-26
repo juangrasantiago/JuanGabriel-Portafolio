@@ -96,7 +96,7 @@ export const translations = {
           desc: "Digital menu for the fast-food restaurant Q'Komo?. A static website built using HTML, CSS, and vanilla JavaScript, without frameworks or external dependencies. It features a minimalist design with a dark background and an orange-red color palette. It includes sticky navigation, a hero section, and all menu categories organized and dynamically rendered directly from the code.",
           tags: ["Html", "CSS", "JavasCript"],
           github: "https://github.com/juangrasantiago/Burger-Q-Komo-",
-          demo: ""
+          demo: "https://qkomo.vercel.app/#"
         },
         {
           title: "JGSAnalyzer",
@@ -240,7 +240,7 @@ export const translations = {
           desc: "Carta digital para el restaurante de comida rápida Q'Komo?. Web estática desarrollada con HTML, CSS y JavaScript vanilla, sin frameworks ni dependencias externas. Diseño minimalista con fondo oscuro y paleta naranja-rojiza. Incluye navegación sticky, hero section y todas las categorías del menú organizadas y renderizadas dinámicamente desde el propio código.",
           tags: ["Html", "CSS", "JavasCript"],
           github: "https://github.com/juangrasantiago/Burger-Q-Komo-",
-          demo: ""
+          demo: "https://qkomo.vercel.app/#"
         },
         {
           title: "JGSAnalyzer",
