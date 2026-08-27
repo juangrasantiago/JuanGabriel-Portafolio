@@ -106,6 +106,13 @@ export const translations = {
           demo: ""
         },
         {
+          title: "JGSPasswordKeys",
+          desc: "Complex password generator with cryptographically secure entropy (secrets module) and an encrypted local vault (Fernet + PBKDF2-HMAC-SHA256) to store credentials by service, protected by a master password.",
+          tags: ["Python", "Cryptography", "CLI"],
+          github: "https://github.com/juangrasantiago/JGSPasswordKeys",
+          demo: ""
+        },
+        {
           title: "FRIKIZONE",
           desc: "Final project for DAW degree, online website for selling board games and console games",
           tags: ["HTML", "CSS", "JavaScript", "PHP"],
@@ -247,6 +254,13 @@ export const translations = {
           desc: "Herramienta de análisis de cabeceras de seguridad HTTP desarrollada en Python. Detecta cabeceras ausentes, clasifica el riesgo y genera reportes JSON.",
           tags: ["Python"],
           github: "https://github.com/juangrasantiago/JGSAnalyzer",
+          demo: ""
+        },
+        {
+          title: "JGSPasswordKeys",
+          desc: "Generador de contraseñas complejas con entropía criptográfica real (módulo secrets) y bóveda cifrada local (Fernet + PBKDF2-HMAC-SHA256) para guardar credenciales por servicio, protegida con contraseña maestra.",
+          tags: ["Python", "Criptografía", "CLI"],
+          github: "https://github.com/juangrasantiago/JGSPasswordKeys",
           demo: ""
         },
         {
