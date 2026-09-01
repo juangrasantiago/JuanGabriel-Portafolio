@@ -68,6 +68,27 @@ export const translations = {
           desc: "Security, compliance, and identity concepts across Microsoft cloud.",
           pdf: "/certs/CertificadoSC-900.pdf"
         },
+        {
+          code: "NDG Linux Essentials",
+          name: "NDG Linux Essentials",
+          issuer: "Cisco Networking Academy / NDG",
+          desc: "Linux operating system fundamentals, command line usage, and file permissions.",
+          pdf: "/certs/NDG-Linux-Essentials.pdf"
+        },
+        {
+          code: "Cybersecurity Program",
+          name: "Cybersecurity Program",
+          issuer: "The Valley Digital Business School / Red.es",
+          desc: "253-hour program covering cybersecurity fundamentals, pentesting, and digital forensics.",
+          pdf: "/certs/Certificado-Ciberseguridad-TheValley.pdf"
+        },
+        {
+          code: "CCNA Prep",
+          name: "Cisco Network Technologies – CCNA Preparation",
+          issuer: "PUE DATA S.L. (SEPE)",
+          desc: "160-hour course on Cisco routing and switching technologies, preparing for the CCNA certification.",
+          pdf: "/certs/Diploma-CCNA-Cisco.pdf"
+        },
       ],
     },
     skills: {
@@ -218,6 +239,27 @@ export const translations = {
           issuer: "Microsoft",
           desc: "Conceptos de seguridad, cumplimiento e identidad en la nube de Microsoft.",
           pdf: "/certs/CertificadoSC-900.pdf"
+        },
+        {
+          code: "NDG Linux Essentials",
+          name: "NDG Linux Essentials",
+          issuer: "Cisco Networking Academy / NDG",
+          desc: "Fundamentos del sistema operativo Linux, uso de la línea de comandos y permisos de archivos.",
+          pdf: "/certs/NDG-Linux-Essentials.pdf"
+        },
+        {
+          code: "Programa en Ciberseguridad",
+          name: "Programa en Ciberseguridad",
+          issuer: "The Valley Digital Business School / Red.es",
+          desc: "Programa de 253 horas sobre fundamentos de ciberseguridad, pentesting y análisis forense.",
+          pdf: "/certs/Certificado-Ciberseguridad-TheValley.pdf"
+        },
+        {
+          code: "Preparación CCNA",
+          name: "Especialista en tecnologías de red Cisco – Preparación CCNA",
+          issuer: "PUE DATA S.L. (SEPE)",
+          desc: "Curso de 160 horas sobre routing y switching Cisco, preparación para la certificación CCNA.",
+          pdf: "/certs/Diploma-CCNA-Cisco.pdf"
         },
       ],
     },
