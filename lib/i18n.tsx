@@ -68,6 +68,27 @@ export const translations = {
           desc: "Security, compliance, and identity concepts across Microsoft cloud.",
           pdf: "/certs/CertificadoSC-900.pdf"
         },
+        {
+          code: "NDG Linux Essentials",
+          name: "NDG Linux Essentials",
+          issuer: "Cisco Networking Academy / NDG",
+          desc: "Linux operating system fundamentals, command line usage, and file permissions.",
+          pdf: "/certs/NDG-Linux-Essentials.pdf"
+        },
+        {
+          code: "Cybersecurity Program",
+          name: "Cybersecurity Program",
+          issuer: "The Valley Digital Business School / Red.es",
+          desc: "253-hour program covering cybersecurity fundamentals, pentesting, and digital forensics.",
+          pdf: "/certs/Certificado-Ciberseguridad-TheValley.pdf"
+        },
+        {
+          code: "CCNA Prep",
+          name: "Cisco Network Technologies – CCNA Preparation",
+          issuer: "PUE DATA S.L. (SEPE)",
+          desc: "160-hour course on Cisco routing and switching technologies, preparing for the CCNA certification.",
+          pdf: "/certs/Diploma-CCNA-Cisco.pdf"
+        },
       ],
     },
     skills: {
@@ -103,6 +124,13 @@ export const translations = {
           desc: "HTTP security header analysis tool developed in Python. Detects missing headers, classifies the risk, and generates JSON reports.",
           tags: ["Python"],
           github: "https://github.com/juangrasantiago/JGSAnalyzer",
+          demo: ""
+        },
+        {
+          title: "JGSPasswordKeys",
+          desc: "Complex password generator with cryptographically secure entropy (secrets module) and an encrypted local vault (Fernet + PBKDF2-HMAC-SHA256) to store credentials by service, protected by a master password.",
+          tags: ["Python", "Cryptography", "CLI"],
+          github: "https://github.com/juangrasantiago/JGSPasswordKeys",
           demo: ""
         },
         {
@@ -212,6 +240,27 @@ export const translations = {
           desc: "Conceptos de seguridad, cumplimiento e identidad en la nube de Microsoft.",
           pdf: "/certs/CertificadoSC-900.pdf"
         },
+        {
+          code: "NDG Linux Essentials",
+          name: "NDG Linux Essentials",
+          issuer: "Cisco Networking Academy / NDG",
+          desc: "Fundamentos del sistema operativo Linux, uso de la línea de comandos y permisos de archivos.",
+          pdf: "/certs/NDG-Linux-Essentials.pdf"
+        },
+        {
+          code: "Programa en Ciberseguridad",
+          name: "Programa en Ciberseguridad",
+          issuer: "The Valley Digital Business School / Red.es",
+          desc: "Programa de 253 horas sobre fundamentos de ciberseguridad, pentesting y análisis forense.",
+          pdf: "/certs/Certificado-Ciberseguridad-TheValley.pdf"
+        },
+        {
+          code: "Preparación CCNA",
+          name: "Especialista en tecnologías de red Cisco – Preparación CCNA",
+          issuer: "PUE DATA S.L. (SEPE)",
+          desc: "Curso de 160 horas sobre routing y switching Cisco, preparación para la certificación CCNA.",
+          pdf: "/certs/Diploma-CCNA-Cisco.pdf"
+        },
       ],
     },
     skills: {
@@ -247,6 +296,13 @@ export const translations = {
           desc: "Herramienta de análisis de cabeceras de seguridad HTTP desarrollada en Python. Detecta cabeceras ausentes, clasifica el riesgo y genera reportes JSON.",
           tags: ["Python"],
           github: "https://github.com/juangrasantiago/JGSAnalyzer",
+          demo: ""
+        },
+        {
+          title: "JGSPasswordKeys",
+          desc: "Generador de contraseñas complejas con entropía criptográfica real (módulo secrets) y bóveda cifrada local (Fernet + PBKDF2-HMAC-SHA256) para guardar credenciales por servicio, protegida con contraseña maestra.",
+          tags: ["Python", "Criptografía", "CLI"],
+          github: "https://github.com/juangrasantiago/JGSPasswordKeys",
           demo: ""
         },
         {
