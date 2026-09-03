@@ -254,7 +254,7 @@ export const translations = {
           desc: "Proyecto de fin de grado de DAW, página web online de venta de juegos de mesa y juegos de consola",
           tags: ["HTML", "CSS", "JavaScript", "PHP"],
           github: "https://github.com/juangrasantiago/FRIKIZONE",
-          demo: "" 
+          demo: ""
         },
       ],
     },

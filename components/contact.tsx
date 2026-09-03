@@ -1,16 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { Mail } from "lucide-react"
+import { AnimatePresence, motion } from "framer-motion"
+import { Check, Mail } from "lucide-react"
 import { SectionHeading } from "@/components/section-heading"
+import { Reveal } from "@/components/motion"
 import { Button } from "@/components/ui/button"
 import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
 import { useLanguage } from "@/lib/i18n"
 
 export function Contact() {
   const { t } = useLanguage()
-  
-    const [copied, setCopied] = useState(false)
+
+  const [copied, setCopied] = useState(false)
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText("juangrasantiago@gmail.com")
@@ -18,35 +20,61 @@ export function Contact() {
     setCopied(true)
 
     setTimeout(() => {
-    setCopied(false)
+      setCopied(false)
     }, 2000)
   }
+
   return (
     <section id="contact" className="px-6 py-20">
       <div className="mx-auto max-w-3xl text-center">
         <SectionHeading index={t.contact.index} title={t.contact.title} className="justify-center" />
-        <p className="mx-auto max-w-xl text-pretty leading-relaxed text-muted-foreground">
-          {t.contact.desc}
-        </p>
-        <div className="mt-8 flex justify-center">
+        <Reveal>
+          <p className="mx-auto max-w-xl text-pretty leading-relaxed text-muted-foreground">
+            {t.contact.desc}
+          </p>
+        </Reveal>
+        <Reveal delay={0.1} className="mt-8 flex justify-center">
           <Button asChild size="lg">
             <a
               href="mailto:juangrasantiago@gmail.com"
-             className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center"
             >
-             <Mail className="size-4" aria-hidden="true" />
-             {t.contact.cta}
+              <Mail className="size-4" aria-hidden="true" />
+              {t.contact.cta}
             </a>
           </Button>
-        </div>
-        <p
+        </Reveal>
+        <button
+          type="button"
           onClick={copyEmail}
-          className="mt-4 cursor-pointer text-center text-sm text-muted-foreground transition-colors hover:text-primary"
-          >
-          {copied
-           ? "✓ Correo copiado al portapapeles"
-            : "📧 juangrasantiago@gmail.com"}
-        </p>
+          className="mt-4 inline-flex cursor-pointer items-center justify-center gap-1.5 text-center font-mono text-sm text-muted-foreground transition-colors hover:text-primary"
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            {copied ? (
+              <motion.span
+                key="copied"
+                initial={{ opacity: 0, y: -4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 4 }}
+                transition={{ duration: 0.2 }}
+                className="inline-flex items-center gap-1.5 text-primary"
+              >
+                <Check className="size-4" aria-hidden="true" />
+                Correo copiado al portapapeles
+              </motion.span>
+            ) : (
+              <motion.span
+                key="email"
+                initial={{ opacity: 0, y: -4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 4 }}
+                transition={{ duration: 0.2 }}
+              >
+                juangrasantiago@gmail.com
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </button>
         <div className="mt-6 flex items-center justify-center gap-6">
           <a
             href="https://github.com/juangrasantiago"
