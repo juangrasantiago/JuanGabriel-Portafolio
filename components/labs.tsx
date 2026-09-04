@@ -10,6 +10,14 @@ const icons = [Crosshair, Network, ScanLine, Lock]
 /** Bento spans (lg only) — item 0 is the featured 2x2 cell, item 3 spans full width. */
 const bentoSpan = ["lg:col-span-2 lg:row-span-2", "", "", "lg:col-span-3"]
 
+const WRITEUPS_REPO = "https://github.com/juangrasantiago/maquinas-writeups"
+
+const platformLinks = [
+  { label: "DockerLabs", href: `${WRITEUPS_REPO}/tree/main/dockerlabs` },
+  { label: "TryHackMe", href: `${WRITEUPS_REPO}/tree/main/tryhackme` },
+  { label: "HackTheBox", href: `${WRITEUPS_REPO}/tree/main/hackthebox` },
+]
+
 function slug(name: string) {
   return name
     .toLowerCase()
@@ -18,7 +26,9 @@ function slug(name: string) {
 }
 
 export function Labs() {
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+
+  const repoLinkLabel = lang === "es" ? "Ver todos los write-ups en GitHub" : "View all write-ups on GitHub"
 
   return (
     <section id="labs" className="border-b border-border px-6 py-20">
@@ -29,6 +39,7 @@ export function Labs() {
             const Icon = icons[i] ?? Crosshair
             const tint = i % 2 === 0 ? "bg-primary/10 text-primary" : "bg-accent/10 text-accent"
             const glow = i % 2 === 0 ? "hover:glow-border" : "hover:glow-border-accent"
+            const isWriteupsCard = i === 0
             return (
               <StaggerItem key={lab.name} className={bentoSpan[i] ?? ""}>
                 <HoverLift className="h-full">
@@ -62,6 +73,32 @@ export function Labs() {
                       </div>
                       <h3 className="text-glow font-medium text-foreground">{lab.name}</h3>
                       <p className="text-sm leading-relaxed text-muted-foreground">{lab.desc}</p>
+
+                      {isWriteupsCard && (
+                        <div className="mt-auto flex flex-col gap-3 pt-2">
+                          <a
+                            href={WRITEUPS_REPO}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex w-fit items-center gap-1 font-mono text-xs text-primary transition-colors hover:text-accent"
+                          >
+                            {"→ " + repoLinkLabel}
+                          </a>
+                          <div className="flex flex-wrap gap-2">
+                            {platformLinks.map((platform) => (
+                              <a
+                                key={platform.label}
+                                href={platform.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-3 py-1 font-mono text-[0.7rem] uppercase tracking-widest text-primary transition-colors hover:border-primary hover:bg-primary/15"
+                              >
+                                {platform.label}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </article>
                 </HoverLift>
