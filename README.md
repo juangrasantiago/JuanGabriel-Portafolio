@@ -6,6 +6,10 @@ Portfolio profesional desarrollado con Next.js y Tailwind CSS para mostrar mis c
 
 **Live Demo:** https://juan-gabriel-portafolio.vercel.app/
 
+## 📄 Curriculum Vitae
+
+**[Descargar CV (PDF)](./docs/CV_Juan_Gabriel_Santiago.pdf)**
+
 ## 👨‍💻 Sobre mí
 
 Soy Técnico IT con especialización reciente en Ciberseguridad y Cloud Computing.
