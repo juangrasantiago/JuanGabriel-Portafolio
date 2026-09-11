@@ -147,7 +147,7 @@ export const translations = {
       title: "Cybersecurity Labs",
       items: [
         {
-          name: "HackTheBox — Offensive Path",
+          name: "Machines Completed — Write-Ups",
           desc: "Completed rooms covering enumeration, privilege escalation, and exploitation in controlled environments.",
           level: "Intermediate",
         },
@@ -319,7 +319,7 @@ export const translations = {
       title: "Laboratorios de ciberseguridad",
       items: [
         {
-          name: "HackTheBox — Ruta ofensiva",
+          name: "Máquinas Realizadas — Write-Ups",
           desc: "Completé salas que cubren enumeración, escalada de privilegios y explotación en entornos controlados.",
           level: "Intermedio",
         },

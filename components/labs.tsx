@@ -7,8 +7,8 @@ import { useLanguage } from "@/lib/i18n"
 
 const icons = [Crosshair, Network, ScanLine, Lock]
 
-/** Bento spans (lg only) — item 0 is the featured 2x2 cell, item 3 spans full width. */
-const bentoSpan = ["lg:col-span-2 lg:row-span-2", "", "", "lg:col-span-3"]
+/** Bento spans (lg only) — item 3 spans full width, the rest are equal-sized cells. */
+const bentoSpan = ["", "", "", "lg:col-span-3"]
 
 const WRITEUPS_REPO = "https://github.com/juangrasantiago/maquinas-writeups"
 

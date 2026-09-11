@@ -34,7 +34,7 @@ function SkillBar({ label, value, accent }: { label: string; value: number; acce
           className={`h-full rounded-full ${barColor}`}
           initial={reduce ? undefined : { width: 0 }}
           whileInView={{ width: `${value}%` }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, amount: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         />
       </div>
