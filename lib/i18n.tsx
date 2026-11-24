@@ -104,6 +104,27 @@ export const translations = {
     projects: {
       index: "04",
       title: "Projects",
+      securityLabel: "Cybersecurity",
+      sapLabel: "SAP ABAP Cloud",
+      otherLabel: "Other",
+      sapItems: [
+        {
+          title: "AEROFLOTA — Fleet & Maintenance Management",
+          desc: "Fleet and aircraft maintenance management application built with ABAP Cloud and object-oriented programming. It models passenger and cargo aircraft through inheritance, tracks flight hours, inspections and operating costs, logs workshop interventions and validates registration numbers. Includes unit and integration tests, a technical report and a traceability matrix.",
+          tags: ["SAP ABAP Cloud", "ABAP OO", "ADT", "ABAP Unit"],
+          github: "https://github.com/juangrasantiago/AEROFLOTA-ABAP-CLOUD",
+          demo: ""
+        },
+      ],
+      otherItems: [
+        {
+          title: "Restaurant Menu — SAP CAP & Integration Suite",
+          desc: "Restaurant menu service built with SAP CAP (OData v4) exposing dishes and ingredients entities with draft enabled. Integrated through an iFlow in SAP Integration Suite (HTTPS sender with Content Modifiers) and tested end to end with Postman.",
+          tags: ["SAP CAP", "OData v4", "Integration Suite", "Postman"],
+          github: "",
+          demo: ""
+        },
+      ],
       items: [
         {
           title: "JGScan",
@@ -276,6 +297,27 @@ export const translations = {
     projects: {
       index: "04",
       title: "Proyectos",
+      securityLabel: "Ciberseguridad",
+      sapLabel: "SAP ABAP Cloud",
+      otherLabel: "Otros",
+      sapItems: [
+        {
+          title: "AEROFLOTA — Gestión de flota y mantenimiento",
+          desc: "Aplicación de gestión de flota y mantenimiento de aeronaves desarrollada en ABAP Cloud con programación orientada a objetos. Modela aviones de pasajeros y de carga mediante herencia, controla horas de vuelo, revisiones y costes operativos, registra intervenciones de taller y valida matrículas. Incluye pruebas individuales y de integración, memoria técnica y matriz de trazabilidad.",
+          tags: ["SAP ABAP Cloud", "ABAP OO", "ADT", "ABAP Unit"],
+          github: "https://github.com/juangrasantiago/AEROFLOTA-ABAP-CLOUD",
+          demo: ""
+        },
+      ],
+      otherItems: [
+        {
+          title: "Carta de restaurante — SAP CAP e Integration Suite",
+          desc: "Servicio de carta de restaurante construido con SAP CAP (OData v4) que expone las entidades Platos e Ingredientes con draft habilitado. Integrado mediante un iFlow en SAP Integration Suite (sender HTTPS con Content Modifiers) y probado de extremo a extremo con Postman.",
+          tags: ["SAP CAP", "OData v4", "Integration Suite", "Postman"],
+          github: "",
+          demo: ""
+        },
+      ],
       items: [
         {
           title: "JGScan",
